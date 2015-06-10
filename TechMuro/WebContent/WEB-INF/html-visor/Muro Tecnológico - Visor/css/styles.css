@@ -1,0 +1,416 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+header, nav, section, article, aside, figure, footer{
+	display:block;
+	}	
+
+body {
+	margin:0;
+	}
+
+h1, h2, h3, h4, h5, span {
+	margin:0;
+	padding:0;
+	}
+	
+h1 {
+	font-family:"Stag Sans Light", Arial, sans-serif;
+	font-size:23px;
+	color:#fff;
+	text-align:center;
+	}	
+	
+/***********************************/	
+	
+#container {
+	width:1920px;
+	height:auto;
+	display:block;
+	overflow:hidden;
+	}
+	
+#header {
+	height:70px;
+	}
+	
+#header #logo-responsive {
+	width:1366px;
+	height:70px;
+	background:url(../images-visor/logo-header-responsive.jpg) no-repeat;
+	display:none;
+	padding:0;
+	margin:0;
+	}
+	
+#body {
+	width:100%;
+	height:auto;
+	display:block;
+	background:linear-gradient(top, #efefef 50%, #fefefe 100%);
+	background:-webkit-linear-gradient(top, #efefef 50%, #fefefe 100%);
+	overflow:hidden;
+	}	
+	
+/***************** BLOCK 1 ****************/		
+#block-tasas-tarifas {
+	width:1920px;
+	height:auto;
+	margin:0 auto;
+	position:relative;
+	margin-top:30px;
+	}	
+	
+#block-tasas-tarifas #head-title-tasas-tarifas {
+	width:459px;
+	height:50px;
+	background:#0a5899 url(../images/icon-title-tarifas.png) no-repeat left;
+	margin:0 auto;
+	line-height:50px;
+	display:block;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-o-border-radius:3px;
+	-ms-border-radius:3px;
+	position:absolute;
+	top:-30px;
+	left:730px;
+	}
+	
+#block-tasas-tarifas #shadow-tasas-tarifas {
+	width:459px;
+	height:31px;
+	background:url(../images/shadow-tasas-tarifas.png) no-repeat;
+	position:absolute;
+	top:20px;
+	left:730px;
+	}	
+	
+#block-tasas-tarifas #block-body-personas {
+	width:1816px;
+	height:247px;
+	background:#fff;
+	margin:0 auto;
+	padding:0;
+	list-style:none;
+	border:1px solid #ececec;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-ms-border-radius:3px;
+	-o-border-radius:3px;
+	display:block;
+	}
+	
+#block-tasas-tarifas #shadow-body-tasas-tarifas {
+	width:1818px;
+	height:31px;
+	background:url(../images/shadow-body-tasas-tarifas.png) no-repeat;
+	position:absolute;
+	top:248px;
+	left:50px;
+	}		
+	
+#block-body-personas li {
+	width:907px;
+	height:auto;
+	display:block;
+	float:left;
+	}	
+	
+#block-body-personas li#border-left {
+	height:51px;
+	border-right:1px solid #197fa9;
+	border-radius:5px 0 0 0;
+	-webkit-border-radius:5px 0 0 0;
+	-moz-border-radius:5px 0 0 0;
+	-ms-border-radius:5px 0 0 0;
+	-o-border-radius:5px 0 0 0;
+	}	
+	
+#block-body-personas li#border-right {
+	height:51px;
+	border-left:1px solid #32c3f0;
+	border-radius:0 5px 0 0;
+	-webkit-border-radius:0 5px 0 0;
+	-moz-border-radius:0 5px 0 0;
+	-ms-border-radius:0 5px 0 0;
+	-o-border-radius:0 5px 0 0;
+	}
+	
+#block-body-personas li #head-title-personas {
+	height:51px;
+	background:#23a5dd;
+	line-height:51px;
+	}
+
+.list-persona-natural {
+	height:220px;
+	margin:0;
+	padding:0;
+	list-style:url(../images/list-icon-personas.png);
+	float:left;
+	}
+	
+.list-persona-natural li a {
+	width:auto;
+	line-height:27px;
+	font-family:"Stag Sans Light", Arial, sans-serif;
+	font-size:17px;
+	color:#000;
+	text-decoration:none;
+	display:block;
+	float:left;
+	}	
+
+/***************** BLOCK 2 ****************/
+#block-sub {
+	width:1920px;
+	height:auto;
+	margin:0 auto;
+	padding:40px 0;
+	overflow:hidden;
+	position:relative;
+	}			
+	
+#block-sub #block-body-notarias {
+	width:219px;
+	height:100px;
+	background:url(../images/block-notarias.png) no-repeat;
+	margin-left:50px;
+	padding-top:120px;
+	text-decoration:none;
+	display:block;
+	}	
+	
+#block-sub a {
+	text-decoration:none;
+	float:left;
+	}
+	
+#block-body-notarias > h1 {
+	width:150px;
+	font-family:"Stag Sans Light", Arial, sans-serif;
+	font-size:23px;
+	text-align:center;
+	color:#fff;
+	line-height:25px;
+	text-shadow:1px 1px 0.5px #000;
+	margin:0 auto;
+	}
+	
+#block-body-comunicados {
+	width:758px;
+	height:220px;
+	background:#fff;
+	border:1px solid #ececec;
+	display:block;
+	margin-left:40px;
+	float:left;
+	}	
+	
+#block-body-comunicados #head-title-comunicados {
+	width:auto;
+	height:50px;
+	background:#7fc241 url(../images/icon-title-avisos.png) no-repeat left;
+	margin:0 auto;
+	line-height:50px;
+	display:block;
+	}	
+	
+/*******************************/	
+#block-body-canales {
+	width:758px;
+	height:220px;
+	background:#fff;
+	border:1px solid #ececec;
+	margin-left:40px;
+	display:block;
+	float:left;
+	}	
+	
+#block-body-canales #head-title-canales {
+	width:auto;
+	height:50px;
+	background:#fdbd37 url(../images/icon-title-canales.png) no-repeat left;
+	margin:0 auto;
+	line-height:50px;
+	display:block;
+	}
+	
+#block-sub #shadow-body-notarias {
+	width:219px;
+	height:44px;
+	background:url(../images/shadow-body-notarias.png) no-repeat;
+	position:absolute;
+	top:259px;
+	left:50px;
+	}
+	
+#block-sub #shadow-body-comunicados {
+	width:760px;
+	height:33px;
+	background:url(../images/shadow-body-block-sub.png) no-repeat;
+	position:absolute;
+	top:261px;
+	left:309px;
+	}		
+	
+#block-sub #shadow-body-canales {
+	width:760px;
+	height:33px;
+	background:url(../images/shadow-body-block-sub.png) no-repeat;
+	position:absolute;
+	top:261px;
+	right:50px;
+	}		
+	
+/******************************************/
+/***		CSS para movil 1366px		***/
+/******************************************/
+@media only screen and (max-width:1366px){
+	h1 {
+		font-size:20px;
+		}	
+	
+	#container {
+		width:1366px;
+		height:auto;
+		}
+		
+	#header img {
+		display:none;
+		}
+	
+	#header #logo-responsive {
+		display:block;
+		}	
+		
+	/******* BLOCK 1 *******/	
+		
+	#block-tasas-tarifas {
+		width:1366px;
+		}	
+		
+	#block-tasas-tarifas #head-title-tasas-tarifas {
+		width:359px;
+		height:41px;
+		line-height:41px;
+		background:#0a5899 url(../images-visor/icon-title-tarifas-responsive.png) no-repeat left;
+		top:-20px;
+		left:500px;
+		}
+		
+	#block-tasas-tarifas #shadow-tasas-tarifas {
+		width:459px;
+		height:31px;
+		background:url(../images/shadow-tasas-tarifas-responsive.png) no-repeat;
+		top:21px;
+		left:500px;
+		}
+		
+	#block-tasas-tarifas #block-body-personas {
+		width:1323px;
+		height:167px;
+		}
+		
+	#block-tasas-tarifas #shadow-body-tasas-tarifas {
+		width:1325px;
+		height:20px;
+		background:url(../images/shadow-body-tasas-tarifas-responsive.png) no-repeat;
+		position:absolute;
+		top:168px;
+		left:20px;
+		}		
+		
+	#block-body-personas li {
+		width:660px;
+		}	
+		
+	#block-body-personas li#border-left {
+		height:41px;
+		}	
+		
+	#block-body-personas li#border-right {
+		height:41px;
+		}
+		
+	#block-body-personas li #head-title-personas {
+		height:41px;
+		line-height:41px;
+		}	
+	
+	/***************** BLOCK 2 ****************/
+	#block-sub {
+		width:1366px;
+		padding:20px 0;
+		}			
+		
+	#block-sub #block-body-notarias {
+		width:168px;
+		height:80px;
+		background:url(../images/block-notarias-responsive.png) no-repeat;
+		margin-left:20px;
+		padding-top:90px;
+		}
+		
+	#block-body-notarias > h1 {
+		width:110px;
+		font-size:18px;
+		line-height:18px;
+		}
+		
+	#block-body-comunicados {
+		width:558px;
+		height:170px;
+		margin-left:20px;
+		}	
+		
+	#block-body-comunicados #head-title-comunicados {
+		height:40px;
+		background:#7fc241 url(../images/icon-title-avisos-responsive.png) no-repeat left;
+		line-height:40px;
+		}		
+	
+/*******************************/	
+#block-body-canales {
+	width:558px;
+	height:170px;
+	margin-left:20px;
+	}	
+	
+#block-body-canales #head-title-canales {
+	height:40px;
+	background:#fdbd37 url(../images/icon-title-canales-responsive.png) no-repeat left;
+	line-height:40px;
+	}
+	
+#block-sub #shadow-body-notarias {
+	width:169px;
+	height:24px;
+	background:url(../images/shadow-body-notarias-responsive.png) no-repeat;
+	position:absolute;
+	top:190px;
+	left:20px;
+	}
+	
+#block-sub #shadow-body-comunicados {
+	width:560px;
+	height:18px;
+	background:url(../images/shadow-body-block-sub-responsive.png) no-repeat;
+	top:191px;
+	left:209px;
+	}		
+	
+#block-sub #shadow-body-canales {
+	width:560px;
+	height:18px;
+	background:url(../images/shadow-body-block-sub-responsive.png) no-repeat;
+	top:191px;
+	right:20px;
+	}			
+	
+}	
+	

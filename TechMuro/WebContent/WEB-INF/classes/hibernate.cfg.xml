@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+ 
+<hibernate-configuration>
+    <session-factory>
+        <mapping class="pe.grupobbva.muro.entity.EmployeeEntity" />
+        <mapping class="pe.grupobbva.muro.entity.Usuario" />
+        <mapping class="pe.grupobbva.muro.entity.LogMuro" />
+        <mapping class="pe.grupobbva.muro.entity.Privilegio" />
+        <mapping class="pe.grupobbva.muro.entity.PerfilPrivilegio" />
+        <mapping class="pe.grupobbva.muro.entity.Perfil" />
+        <mapping class="pe.grupobbva.muro.entity.Afiche" />
+        <mapping class="pe.grupobbva.muro.entity.AficheOficina" />
+        <mapping class="pe.grupobbva.muro.entity.AficheOficinaId" />
+        <mapping class="pe.grupobbva.muro.entity.Oficina" />
+        <mapping class="pe.grupobbva.muro.entity.Plaza" />
+        <mapping class="pe.grupobbva.muro.entity.ComunicadoOficina" />
+        <mapping class="pe.grupobbva.muro.entity.ComunicadoOficinaId" />
+        <mapping class="pe.grupobbva.muro.entity.Comunicado" />
+        <mapping class="pe.grupobbva.muro.entity.OcurrenciaMuro" />
+        
+        <mapping class="pe.grupobbva.muro.entity.Aviso" />
+        <mapping class="pe.grupobbva.muro.entity.Capitulo" />
+        <mapping class="pe.grupobbva.muro.entity.Categoria" />
+        <mapping class="pe.grupobbva.muro.entity.Columna" />
+        <mapping class="pe.grupobbva.muro.entity.Contrato" />
+        <mapping class="pe.grupobbva.muro.entity.Nota" />
+        <mapping class="pe.grupobbva.muro.entity.Notaria" />
+        <mapping class="pe.grupobbva.muro.entity.NotariaContrato" />
+        <mapping class="pe.grupobbva.muro.entity.NotariaContratoId" />
+        <mapping class="pe.grupobbva.muro.entity.Oficina" />
+        <mapping class="pe.grupobbva.muro.entity.Producto" />
+        <mapping class="pe.grupobbva.muro.entity.Rubro" />
+        <mapping class="pe.grupobbva.muro.entity.Subcapitulo" />
+        <mapping class="pe.grupobbva.muro.entity.Transaccion" />
+        <mapping class="pe.grupobbva.muro.entity.TransaccionDetalle" />
+        <mapping class="pe.grupobbva.muro.entity.VariablesGenerales" />
+        
+    </session-factory>
+</hibernate-configuration>

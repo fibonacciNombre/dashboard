@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8' />
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<title>:: Muro Tecnológico ::</title>
+  
+<!-- must have -->
+<link href="css/core.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery/all.js" ></script>
+<script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.min.js" ></script> -->
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js" ></script>
+<script type="text/javascript" src="js/allinone_carousel.js" ></script>
+<!-- <script type="text/javascript" src="js/jquery.colorbox.js" ></script> -->
+
+<!--<script src="js/jquery-ui-1.10.3.custom.min.js"></script>-->
+<!--<script src="js/portBox.slimscroll.min.js"></script> --> 
+<script type="text/javascript" src="js/top_up-min.js"></script>  
+<script type="text/javascript" src="js/jquery.reveal.js"></script>
+
+<!--<script src="js/portBox.slimscroll.min-details.js"></script>-->
+
+<script>
+var a;
+	$(document).ready(function() {
+	
+	  jQuery('#allinone_carousel_sweet').allinone_carousel({
+		  skin: 'sweet',
+		  width: 1920,
+		  height: 458,
+		  autoPlay: 5,
+		  responsive:true,
+		  resizeImages:true,
+		  autoHideBottomNav:false,
+		  //easing:'easeOutBounce',
+		  numberOfVisibleItems:5,
+		  elementsHorizontalSpacing:150,	
+		  elementsVerticalSpacing:20,
+		  verticalAdjustment:140,
+		  animationTime:0.5,
+		  circleLeftPositionCorrection:10,
+		  circleTopPositionCorrection:10,
+		  nextPrevMarginTop:30,
+		  playMovieMarginTop:-15,
+		  bottomNavMarginBottom:-25,
+		  
+		  showCircleTimer:false,
+		  showPreviewThumbs:false,
+		  showBottomNav:false
+		});
+		
+	});
+</script>
+
+</head>
+<body>
+<!------------------------------------------------------------------------------------>
+<div id="container">  
+	
+    <header id="header">
+    	<img src="images/logo-header.jpg" alt="" />
+        <figure id="logo-responsive"></figure>
+    </header>      
+               
+	<div id="banner-container">
+
+        <div id="allinone_carousel_sweet">
+            <div class="myloader"></div>
+            <ul id="index-afiches" class="allinone_carousel_list">
+                <li data-title="10 Luquitas"><a href="images/sweet/afiche-1-popup.jpg" toptions="title = Visualizador de Afiches, effect = clip, layout = quicklook, shaded = 1, group = 1, readAltText: 1"><img src="images/sweet/video-popup.jpg" alt=""/></a></li>
+                <li  data-title="100 Luquitas"><a href="images/sweet/afiche-2-popup.jpg" toptions="title = Visualizador de Afiches, effect = clip, layout = quicklook, shaded = 1, group = 1, readAltText: 1"><img src="images/sweet/afiche-2-popup.jpg" alt="" /></a></li>
+                <li data-title="Mil Luquitas"><a href="images/sweet/afiche-3-popup.jpg" toptions="title = Visualizador de Afiches, effect = clip, layout = quicklook, shaded = 1, group = 1, readAltText: 1"><img src="images/sweet/afiche-3-popup.jpg" alt="" /></a></li>
+                <li><a href="images/sweet/afiche-4-popup.jpg" toptions="title = Visualizador de Afiches, effect = clip, layout = quicklook, shaded = 1, group = 1, readAltText: 1"><img src="images/sweet/afiche-4-popup.jpg" alt="" /></a><img src="images/sweet/afiche-4-popup.jpg" alt="" /></li>
+                <li><a href="images/sweet/afiche-5-popup.jpg" toptions="title = Visualizador de Afiches, effect = clip, layout = quicklook, shaded = 1, group = 1, readAltText: 1"><img src="images/sweet/afiche-5-popup.jpg" alt="" /></a><img src="images/sweet/afiche-5-popup.jpg" alt="" /></li>
+                <li><a href="images/sweet/afiche-6-popup.jpg" toptions="title = Visualizador de Afiches, effect = clip, layout = quicklook, shaded = 1, group = 1, readAltText: 1"><img src="images/sweet/afiche-6-popup.jpg" alt="" /></a><img src="images/sweet/afiche-6-popup.jpg" alt="" /></li>
+            </ul>              
+        </div>  
+        
+        <!-- Miniaturas Izquierda -->
+        <div id="container-nav-min-left">
+        	<div id="container-min-left"></div>
+            <ul id="container-min-center">
+                <li><a href="images/photos/afiche-1-popup.png" toptions="title = Visualizador de Afiches, effect = clip, layout = quicklook, shaded = 1, group = 1, readAltText: 1"><img src="images/sweet/min-1.jpg" alt="" /></a>
+				</li>
+                <li><a href=""><img src="images/sweet/min-2.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/sweet/min-3.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/sweet/min-1.jpg" alt=""></a></li>
+			</ul>
+            <div id="container-min-right"></div>
+        </div>
+        
+        <!-- Miniaturas Derecha -->
+        <div id="container-nav-min-right">
+        	<div id="container-min-left"></div>
+            <ul id="container-min-center">
+                <li><a href="images/photos/afiche-1-popup.png" toptions="title = Visualizador de Afiches, effect = clip, layout = quicklook, shaded = 1, group = 1, readAltText: 1"><img src="images/sweet/min-1.jpg" alt="" /></a>
+				</li>
+                <li><a href="images/photos/afiche-1-popup.png" toptions="title = Visualizador de Afiches, effect = clip, layout = quicklook, shaded = 1, group = 1, readAltText: 1"><img src="images/sweet/min-2.jpg" alt="" /></a>
+                </li>
+                <li><a href="images/photos/Daddy Yankee FT Nengo Flow Arcangel Baby Rasta y Gringo De La Ghetto Kendo - Llegamos a la disco.mp4" toptions="title = Visualizador de Afiches, width = 853, height = 505, layout = quicklook, shaded = 1, shaded = 1, group = 1, readAltText: 1"><img src="images/sweet/min-3.jpg" alt="" /></a></li>
+                <li><a href="https://www.youtube.com/v/watch?v=8SRLwe-KQTI;hl=nl&amp;fs=1&amp;rel=0&amp;hd=1&amp;autoplay=1" toptions="title = Visualizador de Afiches, width = 853, height = 505, type = flash, layout = quicklook, shaded = 1, group = 1, readAltText: 1"><img src="images/sweet/min-4.jpg" alt=""></a></li>
+			</ul>
+            <div id="container-min-right"></div>
+        </div>
+
+	</div>        
+	<!--end Banner-->
+    
+    <!-------------------------------------------------------------------------------------> 	
+	<div id="footer" class="clearBoth"></div>
+	
+    <section id="body">
+		<article id="block-tasas-tarifas">
+        	<div id="head-title-tasas-tarifas">
+            	<h1>Tasas y Tarifas</h1>
+            </div>
+            <article id="shadow-tasas-tarifas"></article>
+            <p class="description-par">El tarifario completo y las fórmulas de nuestros productos se encuentran a su disposición en la pág. web: www.bbvacontinental.pe y en el sitio del subgerente de esta oficina.</p>
+            <ul id="block-body-personas">
+                <li id="border-left">
+                	<div id="head-title-personas">
+                        <h1>Persona Natural</h1>
+                    </div>
+                    <ul class="list-persona-natural">
+                    	<li><a href="#">Aplicación General</a></li>
+                        <li><a href="#">Asesoría Jurídica</a></li>
+                        <li><a href="#">Banca Electrónica</a></li>
+                        <li><a href="#">Bancos Corresponsales en el Exterior</a></li>
+                        <li><a href="#">Cartera</a></li>
+                        <li><a href="#">Compra - Venta de Divisas</a></li>
+                        <li><a href="#">Compensación y Canje</a></li>
+                        <li><a href="#">Comercio Exterior</a></li>
+                        <li><a href="#">Cuentas Corrientes</a></li>
+                        <li><a href="#">Cuentas de Ahorros y Plazo</a></li>
+                        <li><a href="#">Finanzas</a></li>
+                    </ul>
+                </li>
+                <li id="border-right">
+                	<div id="head-title-personas">
+                        <h1>Persona Jurídica</h1>
+                    </div>
+                    <ul class="list-persona-natural">
+                    	<li><a href="#">Aplicación General</a></li>
+                        <li><a href="#">Asesoría Jurídica</a></li>
+                        <li><a href="#">Banca Electrónica</a></li>
+                        <li><a href="#">Bancos Corresponsales en el Exterior</a></li>
+                        <li><a href="#">Cartera</a></li>
+                        <li><a href="#">Compra - Venta de Divisas</a></li>
+                        <li><a href="#">Compensación y Canje</a></li>
+                        <li><a href="#">Comercio Exterior</a></li>
+                        <li><a href="#">Cuentas Corrientes</a></li>
+                        <li><a href="#">Cuentas de Ahorros y Plazo</a></li>
+                        <li><a href="#">Finanzas</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <article id="shadow-body-tasas-tarifas"></article>
+        </article>
+        
+        <article id="block-sub">
+            <a href="#" id="button">
+            	<div id="block-body-notarias">
+            		<h1>Lista de Notarios</h1>
+                </div>
+			</a>
+            <div id="block-body-comunicados">
+                <div id="head-title-comunicados">
+                    <h1>Comunicados</h1>
+                </div>
+                <ul class="list-comunicados">
+                <marquee direction="up" scrolldelay="5000" Behavior ="alternate" scrollamount="50" class="marquee">
+                    <li><a href="#" id="activator"><p>Ley de Atención Preferencial.</p><span>17/07/2013</span></a></li>
+                    <li><a href="#" class="clear-right"><p>Comisión Gestión por Volumen de Monedas</p><span>17/07/2013</span></a></li>
+                    <li><a href="#"><p>Novedades CTS.</p><span>17/07/2013</span></a></li>
+                    <li><a href="#" class="clear-right"><p>Impacto de pago mínimo - Tarjetas de Crédito.</p><span>17/07/2013</span></a></li>
+                    <li><a href="#"><p>Tarifario Continental Bolsa</p><span>17/07/2013</span></a></li>
+                    <li><a href="#" class="clear-right"><p>Comisión Gestión por Volumen de Monedas</p><span>17/07/2013</span></a></li>
+                    <li><a href="#"><p>Comisión Gestión por Volumen de Monedas</p><span>17/07/2013</span></a></li>
+                    <li><a href="#" class="clear-right"><p>Ley de Atención Preferencial.</p><span>17/07/2013</span></a></li>
+                    <li><a href="#"><p>Comisión Gestión por Volumen de Monedas</p><span>17/07/2013</span></a></li>
+                    <li><a href="#" class="clear-right"><p>Novedades CTS.</p><span>17/07/2013</span></a></li>
+                    <li><a href="#"><p>Ley de Atención Preferencial.</p><span>17/07/2013</span></a></li>
+                    <li><a href="#" class="clear-right"><p>Comisión Gestión por Volumen de Monedas</p><span>17/07/2013</span></a></li>
+                    <li><a href="#"><p>Novedades CTS.</p><span>17/07/2013</span></a></li>
+                    </marquee>
+                </ul>
+                
+                
+                <!--<div id="slides_873" class="slides" style="overflow: hidden;">
+                    <div class="slide" title="Scrum.org News" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 3; opacity: 1; width: 529px; height: 21px;">
+                    <a href="#">Scrum.org teaming with Avanade to improve the profession of software development</a>
+                    </div>
+                    <div class="slide" title="Scrum.org Blog" style="position: absolute; top: -29px; left: 0px; z-index: 2; opacity: 1; display: none; width: 259px; height: 21px;">
+                    <a href="#">From the blog: Maximizing Scrum</a>
+                    </div>
+                </div>-->
+			</div>
+            <!--<div id="block-body-canales">
+                <div id="head-title-canales">
+                    <h1>Canales mas cercanos</h1>
+                </div>
+			</div>-->
+            <article id="shadow-body-notarias"></article>
+            <article id="shadow-body-comunicados-max"></article>
+            <!--<article id="shadow-body-comunicados"></article>-->
+            <!--<article id="shadow-body-canales"></article>-->
+        </article>
+    </section>
+    <!-- POPUP LISTA DE NOTARIOS -->
+    <!--<div id="list-notarias" class="portBox">
+    	<div class="container-float">
+            <ul id="header-popup-visor">
+                <li id="header-popup-notarios">Lista de Notarios</li>
+                <li id="header-color-2"></li>
+                <li id="header-color-3"></li>
+                <li id="header-color-4"></li>
+                <li id="header-color-5"></li>
+                <li id="header-color-6"></li>
+            </ul>
+            <article class="container-body-popup">
+                <h2>Estimado Cliente</h2>
+                <p>A continuación ponemos a su disposición la relación de Notarios, la misma que se publica de acuerdo a lo establecido por la Resolución SBS N° 8181-2012</p>
+                <table cellpadding="0" cellspacing="0" class="table-notarias">
+                    <tbody>
+                    	<tr class="static-header">
+                            <td class="header-grid-popup">Contrato</td>
+                            <td class="header-grid-popup">Gastos Notariales</td>
+                            <td class="header-grid-popup">Notaría</td>
+                        </tr>
+
+	            		<tr>
+	                        <td>Préstamo Hipotecario para Vivienda</td>
+	                        <td>Hasta S/. 600 -  3 </td>
+                            <td rowspan="3">	
+                                <p><a href="#" id="activator">Notaría Fernandini</a></p>
+                                <p><a href="#">Notaría Carnero</a></p>
+                                <p><a href="#">Notaría Paino</a></p>
+                                <p><a href="#">Notaría Gonzales Loli</a></p>
+                                <p><a href="#">Notaría Banda</a></p>   	
+                                <p><a href="#">Notaría Hidalgo</a></p>
+                                <p><a href="#">Notaría Dannon </a></p>
+                                <p><a href="#">Notaría Gálvez</a></p>
+                            </td>
+	                    </tr>
+					
+	            		<tr>
+	                        <td>Préstamo Hipotecario Mi Vivienda</td>
+	                        <td>Hasta S/. 350 -  0 </td>
+	                    </tr>
+					
+	            		<tr>
+	                        <td>Hipoteca</td>
+	                        <td>Hasta S/. 600  -  0 </td>
+	                    </tr>
+					
+	            		<tr>
+	                        <td>Leasing Contratos hasta US$150,000.00 </td>
+	                        <td>300.0 -  3 </td>
+	                        
+	                        <td rowspan="3">		                        	
+                                <p><a href="#">Notaría Fernandini</a></p>		                        	
+                                <p><a href="#">Notaría Carnero</a></p>		                        	
+                                <p><a href="#">Notaría Paino</a></p>		                        	
+	                        </td>
+	                    </tr>
+					
+	            		<tr>
+	                        <td>Contratos mayores a US$ 150,000.00 hasta US$1'000,000.00</td>
+	                        <td>500.0 -  0 </td>
+	                    </tr>
+					
+	            		<tr>
+	                        <td>Contratos mayores a US$ 1'000,000.00</td>
+	                        <td>800.0 -  0 </td>
+	                    </tr>
+					
+	            		<tr>
+	                        <td>Préstamo Vehicular</td>
+	                        <td>Desde S/. 70 hasta S/. 200  -  1 </td>	                        
+                            <td rowspan="1">		                        	
+                                <p><a href="#">Notaría Fernandini</a></p>		                        	
+                                <p><a href="#">Notaría Gonzales Loli</a></p>		                        	
+                                <p><a href="#">Notaría Banda</a></p>		                        	
+                                <p><a href="#">Notaría Dannon </a></p>		                        	
+                                <p><a href="#">Notaría Gálvez</a></p>		                        	
+                            </td>	                        
+	                    </tr>
+					
+	            		<tr>
+	                        <td>Garantía Mobiliaria Dineraria</td>
+	                        <td>Desde S/. 5 hasta S/. 600  -  1 </td>	                                                
+	                        <td rowspan="1">		                        	
+                                <p><a href="#">Notaría Fernandini</a></p>		                        	
+                                <p><a href="#">Notaría Carnero</a></p>		                        	
+                                <p><a href="#">Notaría Paino</a></p>		                        	
+                                <p><a href="#">Notaría Gonzales Loli</a></p>		                        	
+                                <p><a href="#">Notaría Banda</a></p>		                        	
+                                <p><a href="#">Notaría Hidalgo</a></p>
+                                <p><a href="#">Notaría Dannon </a></p>
+                                <p><a href="#">Notaría Gálvez</a></p>   	
+	                        </td>
+	                    </tr>
+					
+	            		<tr>
+	                        <td>Garantía Mobiliaria No Dineraria</td>
+	                        <td>Desde S/. 100  hasta S/. 600 -  0 </td>
+	                        <td></td>
+	                    </tr>
+					
+                	</tbody>
+                </table>
+            </article>
+            <div id="footer-popup-detalle"></div>
+		</div>
+    </div>-->
+    
+    <!-- POPUP DETALLE DE NOTARIA -->
+    <!--<div class="overlay" id="overlay">
+        <div class="box" id="box">
+        <a class="boxclose" id="boxclose"></a>
+            <div class="container-float">
+                <ul id="header-popup-visor">
+                    <li id="header-popup-notarios">Información de Notaría</li>
+                    <li id="header-color-2"></li>
+                    <li id="header-color-3"></li>
+                    <li id="header-color-4"></li>
+                    <li id="header-color-5"></li>
+                    <li id="header-color-6"></li>
+                </ul>
+                <article class="container-body-popup">
+                    <h2>Notaría Fernandini</h2>
+                    <table cellpadding="0" cellspacing="0" class="table-notarias-details">
+                        <tbody>
+                            <tr>
+                                <td class="header-grid-popup-1">Notaría</td>
+                                <td class="header-grid-popup-2">Datos de contacto</td>
+                            </tr>
+                            <tr>
+                                <td>Notaria Fernandini</td>
+                                <td class="dates-contact">
+                                    <p>Dirección: Las Begonias N° 405, San Isidro, Lima.</p>
+                                    <p>Teléfono: 315-4100.</p>
+                                    <p>Página web: www.notariafernandini.com</p>
+                                    <p>Email: -</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <div id="footer-popup-detalle"></div>
+            </div>
+		</div>
+    </div>-->
+    
+    <!-- POPUP COMUNICADOS -->
+    <div class="overlay" id="overlay">
+        <div class="box" id="box">
+        <a class="boxclose" id="boxclose"></a>
+            <div class="container-float">
+                <ul id="header-popup-visor">
+                    <li id="header-popup-comunicados">Comunicados</li>
+                    <li id="header-color-2"></li>
+                    <li id="header-color-3"></li>
+                    <li id="header-color-4"></li>
+                    <li id="header-color-5"></li>
+                    <li id="header-color-6"></li>
+                </ul>
+                <article class="container-body-popup">
+                    <h3>AVISO DE NOTAS INFORMATIVAS- ESTADOS DE CUENTAS CTS</h3>
+                    <p class="pre-white">Estimados Clientes:
+
+A partir del  01 de septiembre del 2011 ya  no se enviarán en físico las notas de cargo y abono - estados de las cuentas CTS, ya que la información ahí remitida podrá encontrarla disponible en Banca por Internet.
+
+Además, puede consultar sus saldos en Cajeros del Banco y Banca por Teléfono.</p>
+                </article>
+                <div id="footer-popup-detalle"></div>
+            </div>
+		</div>
+    </div>
+	
+	<!-- FIN - POPUP DETAILS -->
+</div>
+
+<script>
+$('#activator').click(function(){
+		$('#overlay').fadeIn('fast',function(){
+		   //$('#box').animate({'top':'30%'},100);
+		});
+	});
+	$('#boxclose').click(function(){
+		$('#box').animate({'top':'30%'},60,function(){
+			$('#overlay').fadeOut('fast');
+		});
+});
+</script>
+
+<script>
+	jQuery(".demo3 .rotate").textrotator({
+		  animation: "flipUp",
+		  speed: 4000 
+	});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xmlns:lang="http://www.springframework.org/schema/lang"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+        http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+ 
+    <context:annotation-config />
+    <context:component-scan base-package="pe.grupobbva.muro.controller" />
+ 
+    <bean id="jspViewResolver"
+        class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass"
+            value="org.springframework.web.servlet.view.JstlView" />
+        <property name="prefix" value="/WEB-INF/view/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+ 
+    <bean id="messageSource"
+        class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basename" value="classpath:messages" />
+        <property name="defaultEncoding" value="UTF-8" />
+    </bean>
+    <bean id="propertyConfigurer"
+        class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+        p:location="WEB-INF/jdbc.properties" />
+ 
+    <bean id="dataSource"
+        class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"
+        p:driverClassName="${jdbc.driverClassName}"
+        p:url="${jdbc.databaseurl}" p:username="${jdbc.username}"
+        p:password="${jdbc.password}" />
+ 
+ 
+    <bean id="sessionFactory"
+        class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="configLocation">
+            <value>classpath:hibernate.cfg.xml</value>
+        </property>
+        <property name="configurationClass">
+            <value>org.hibernate.cfg.AnnotationConfiguration</value>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">${jdbc.dialect}</prop>
+                <prop key="hibernate.show_sql">${jdbc.show_sql}</prop>
+            </props>
+        </property>
+    </bean>
+    
+    <bean id="employeeDAO" class="pe.grupobbva.muro.dao.impl.EmployeeDaoImpl"></bean>
+    <bean id="employeeManager" class="pe.grupobbva.muro.service.impl.EmployeeManagerImpl"></bean>
+    <bean id="usuarioDAO" class="pe.grupobbva.muro.dao.impl.UsuarioDaoImpl"></bean>
+    <bean id="usuarioManager" class="pe.grupobbva.muro.service.impl.UsuarioManagerImpl"></bean>
+    <bean id="aficheDAO" class="pe.grupobbva.muro.dao.impl.AficheDaoImpl"></bean>
+    <bean id="aficheManager" class="pe.grupobbva.muro.service.impl.AficheManagerImpl"></bean>
+    <bean id="productoDAO" class="pe.grupobbva.muro.dao.impl.ProductoDaoImpl"></bean>
+    <bean id="productoManager" class="pe.grupobbva.muro.service.impl.ProductoManagerImpl"></bean>
+    <bean id="notariaDAO" class="pe.grupobbva.muro.dao.impl.NotariaDaoImpl"></bean>
+    <bean id="notariaManager" class="pe.grupobbva.muro.service.impl.NotariaManagerImpl"></bean>
+    <bean id="variableDAO" class="pe.grupobbva.muro.dao.impl.VariableDaoImpl"></bean>
+    <bean id="variableManager" class="pe.grupobbva.muro.service.impl.VariableManagerImpl"></bean>
+    <bean id="oficinaDAO" class="pe.grupobbva.muro.dao.impl.OficinaDaoImpl"></bean>
+    <bean id="oficinaManager" class="pe.grupobbva.muro.service.impl.OficinaManagerImpl"></bean>
+    <bean id="plazaDAO" class="pe.grupobbva.muro.dao.impl.PlazaDaoImpl"></bean>
+    <bean id="plazaManager" class="pe.grupobbva.muro.service.impl.PlazaManagerImpl"></bean>
+    <bean id="contratoDAO" class="pe.grupobbva.muro.dao.impl.ContratoDaoImpl"></bean>
+    <bean id="contratoManager" class="pe.grupobbva.muro.service.impl.ContratoManagerImpl"></bean>
+    <bean id="aficheOficinaDAO" class="pe.grupobbva.muro.dao.impl.AficheOficinaDaoImpl"></bean>
+    <bean id="aficheOficinaManager" class="pe.grupobbva.muro.service.impl.AficheOficinaManagerImpl"></bean>
+ 	<bean id="notariaContratoDAO" class="pe.grupobbva.muro.dao.impl.NotariaContratoDaoImpl"></bean>
+ 	<bean id="LogMuroDAO" class="pe.grupobbva.muro.dao.impl.LogMuroDaoImpl"></bean>
+    <bean id="LogMuroManager" class="pe.grupobbva.muro.service.impl.LogMuroManagerImpl"></bean>
+    <bean id="ComunicadoDAO" class="pe.grupobbva.muro.dao.impl.ComunicadoDaoImpl"></bean>
+    <bean id="ComunicadoManager" class="pe.grupobbva.muro.service.impl.ComunicadoManagerImpl"></bean>
+    <bean id="ComunicadoOficinaDAO" class="pe.grupobbva.muro.dao.impl.ComunicadoOficinaDaoImpl"></bean>
+    <bean id="ComunicadoOficinaManager" class="pe.grupobbva.muro.service.impl.ComunicadoOficinaManagerImpl"></bean>
+    <bean id="capituloDAO" class="pe.grupobbva.muro.dao.impl.CapituloDaoImpl"></bean>
+    <bean id="capituloManager" class="pe.grupobbva.muro.service.impl.CapituloManagerImpl"></bean>
+    <bean id="notaDAO" class="pe.grupobbva.muro.dao.impl.NotaDaoImpl"></bean>
+    <bean id="notaManager" class="pe.grupobbva.muro.service.impl.NotaManagerImpl"></bean>
+ 	
+ 	<bean id="fileValidator" class="pe.grupobbva.muro.validator.FileValidator" />
+
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+		
+    <tx:annotation-driven />
+    <bean id="transactionManager"
+        class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+</beans>
