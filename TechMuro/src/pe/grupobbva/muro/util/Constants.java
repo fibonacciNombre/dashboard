@@ -12,5 +12,6 @@ public class Constants {
 	public static final int TIEMPOACTUALIZACION = 8;
 	public static final int TIEMPOPOPUP = 9;
 	public static final int TIEMPOVIDEO = 10;
+	
 	public static final int PRODUCTOSALFABETICAMENTE = 11;
 }
